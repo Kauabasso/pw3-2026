@@ -15,4 +15,5 @@ class CommentSeeder extends Seeder
     {
         Comment::factory(10)->create();
     }
+    
 }
