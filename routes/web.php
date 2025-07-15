@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CalculosController;
 use App\Http\Controllers\KeepinhoController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProdutosController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -52,5 +53,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('produtos', ProdutosController::class);
+
+Route::resource('post', PostController::class);
 
 require __DIR__ . '/auth.php';
